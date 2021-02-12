@@ -1,7 +1,4 @@
-'use strict';
+import { getRepos } from './listeners.js'
 
-import { createNewListHandler } from './handlers/create-new-list.js'
-
-
-document.getElementById('list-name-input')
-  .addEventListener('keyup', createNewListHandler);
+const repos = document.getElementById("repos");
+repos.addEventListener('click', getRepos);

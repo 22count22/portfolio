@@ -14,13 +14,13 @@
 */
 
 export const listPrototype = {
-  printState: function () {
-    console.log(this.state.name);
-  },
-  render: function () {
-    const buttonEl = document.createElement('button');
-    buttonEl.innerHTML = this.state.name;
-    buttonEl.addEventListener('click', this.printState.bind(this));
-    return buttonEl;
-  }
+    printState: function() {
+        console.log(this.state.name);
+    },
+    render: function() {
+        const buttonEl = document.createElement('button');
+        buttonEl.innerHTML = this.state.name;
+        buttonEl.addEventListener('click', this.printState.bind(this));
+        return buttonEl;
+    }
 };

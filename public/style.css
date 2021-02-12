@@ -1,0 +1,428 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 0 100px 0 100px;
+}
+
+nav ul,
+.min-info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+body {
+    background-color: yellowgreen;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.navbar {
+    background-color: yellowgreen;
+}
+
+header h1 {
+    color: green
+}
+
+header a:hover {
+    color: blue;
+}
+
+header a,
+.text p,
+.about h1,
+.skills h1,
+.work h1,
+.contact h1 {
+    color: green;
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+    margin-left: 40px;
+}
+
+a {
+    text-decoration: none;
+    font-size: .9rem;
+    text-transform: uppercase;
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+    transform: translateY(-50%);
+}
+
+.min-info-section {
+    height: calc(100vh - 81.6px);
+}
+
+.text {
+    margin-top: 120px;
+    padding-left: 33%;
+    left: 50%;
+}
+
+.text h1 {
+    color: #fff;
+    font-size: 3rem;
+    cursor: context-menu;
+}
+
+.text span {
+    display: inline-block;
+}
+
+span:hover {
+    color: rgb(9, 31, 231);
+    transition: all .5s;
+}
+
+span.name {
+    color: blue;
+}
+
+span.m-left {
+    margin-left: -10px;
+}
+
+.text p {
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size: .8rem;
+}
+
+.text a {
+    padding: 12px 25px;
+    background-color: none;
+    border: 3px solid rgb(44, 11, 233);
+    color: rgba(38, 0, 255, 0.822);
+    font-size: .8rem;
+    letter-spacing: 2px;
+    position: relative;
+    top: 80px;
+    overflow: hidden;
+    transition: .5s;
+    display: inline-block;
+}
+
+.text a:hover {
+    color: #fff;
+}
+
+.text a::before {
+    content: '';
+    background-color: orangered;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    transition: .5s;
+}
+
+.text a:hover ::before {
+    height: 100%;
+}
+
+img {
+    height: 300px;
+    width: 260px;
+    position: relative;
+    border-radius: 2em;
+    padding: 25px;
+}
+
+.profile {
+    position: absolute;
+    top: 150px;
+    left: 15%;
+}
+
+.about {
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.about h1,
+.work h1 {
+    font-size: 10rem;
+    z-index: 0;
+    opacity: .1;
+}
+
+.about-me-info {
+    max-width: 1500px;
+    background-color: rgb(203, 236, 81);
+    padding: 50px 70px;
+    position: relative;
+    top: -70px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.about-me-info p {
+    color: gray;
+    font-size: 25px;
+}
+
+.skills {
+    height: 100vh;
+}
+
+.skills h1 {
+    text-align: right;
+    font-size: 10rem;
+    opacity: .1;
+}
+
+.skills-info {
+    font-size: 1.4rem;
+    color: gray;
+    max-width: 800px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.repos {
+    background-color: green;
+    color: wheat;
+    font-size: 20px;
+}
+
+.work-category button {
+    padding: 15px 50px;
+    position: relative;
+    left: 40%;
+    margin-right: 70px;
+    border-radius: 1em;
+}
+
+#divResult {
+    padding: 15px 50px;
+    border-radius: 1em;
+    margin-left: 800px;
+    margin-top: 40px;
+}
+
+
+/* footer*/
+
+.footer {
+    text-align: center;
+    font-weight: var(--font-semi);
+    padding: 2rem 0;
+}
+
+.footer__title {
+    font-size: 2rem;
+    margin-bottom: var(--mb-4);
+    color: gray;
+}
+
+.footer__social {
+    margin-bottom: var(--mb-4);
+}
+
+.footer__icon {
+    font-size: 1.5rem;
+    margin: 0 var(--mb-2);
+    margin-right: 60px;
+}
+
+footer hr {
+    border: 2px solid grey;
+    margin-top: 80px;
+}
+
+footer p {
+    text-align: center;
+    color: black;
+    font-size: 1.2rem;
+    padding: 30px 0;
+}
+
+
+/* form */
+
+.container2 {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #00000010;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: "Montserrat";
+    color: rgb(27, 166, 247);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease background-color;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(214, 226, 236);
+}
+
+#status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error {
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+
+/* skills */
+
+.skills__container {
+    row-gap: 2rem;
+    text-align: center;
+}
+
+.skills__subtitle {
+    margin-bottom: var(--mb-2);
+    color: white;
+    font-size: 30px;
+}
+
+.skills__text {
+    margin-bottom: var(--mb-4);
+    color: gray;
+    font-size: 20px;
+}
+
+.skills__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: var(--font-semi);
+    padding: 3rem 3rem;
+    margin-bottom: var(--mb-4);
+    border-radius: .5rem;
+}
+
+.skills__icon {
+    font-size: 3rem;
+    margin-right: var(--mb-2);
+    color: var(--first-color);
+}
+
+.skills__names {
+    display: flex;
+    align-items: center;
+}
+
+.skills__bar {
+    position: absolute;
+    margin-left: 0;
+    bottom: 0;
+    background-color: white;
+    height: 1rem;
+    border-radius: .5rem;
+    z-index: var(--z-back);
+}
+
+.skills__html {
+    width: 85%;
+}
+
+.skills__css {
+    width: 65%;
+}
+
+.skills__js {
+    width: 55%;
+}
+
+.skills__ux {
+    width: 75%;
+}
+
+@media screen and (max-width: 480px) {
+    .social-panel-container.visible {
+        transform: translateX(0px);
+    }
+    .floating-btn {
+        right: 10px;
+    }
+}
