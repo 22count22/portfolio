@@ -140,18 +140,10 @@ span.m-left {
     height: 100%;
 }
 
-img {
-    height: 300px;
-    width: 260px;
-    position: relative;
-    border-radius: 2em;
-    padding: 25px;
-}
-
 .profile {
     position: absolute;
-    top: 150px;
-    left: 15%;
+    top: 180px;
+    left: 20%;
 }
 
 .about {
