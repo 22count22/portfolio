@@ -5,6 +5,13 @@ body {
     font-family: 'PT sans', sans-serif;
 }
 
+.profile {
+    position: relative;
+    height: 280px;
+    width: 250px;
+    border-radius: 10%;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -257,6 +264,13 @@ footer p {
 
 
 /* form */
+
+.contact {
+    position: relative;
+    color: white;
+    font-size: 18px;
+    margin-left: 80px;
+}
 
 .container2 {
     width: 90%;
